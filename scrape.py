@@ -7,6 +7,7 @@ from io import BytesIO
 API_KEY = 'e7d0969dd7c1aee7a4c65c36ff2e2b9ce5e5c7cc5f3d2d01555834717086ea97'
 
 # Function to get images from Google Images using SerpApi
+def get_images_from_serpapi(query, num_images=5):
     search_url = "https://serpapi.com/search"
     params = {
         'q': query,
